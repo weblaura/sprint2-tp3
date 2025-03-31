@@ -17,7 +17,7 @@ class SuperHeroRepository extends IRepository {
     async obtenerMayorDe30(){
         const superheroes = await superHero.find();
         return superheroes.filter(hero =>
-            hero.edad > 30);
+            hero.edad > 30  && hero.planetaOrigen === "Tierra" && hero.poderes.length >=2);
     }
 }
 export default new SuperHeroRepository();

@@ -4,8 +4,8 @@ import superHeroRoutes from './routes/superHeroRoutes.mjs';
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
+//const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 //middleware para parsear JSON
 app.use(express.json());
 //Conexion a MongoDB
